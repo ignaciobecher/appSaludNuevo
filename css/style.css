@@ -94,11 +94,15 @@
         margin-left: 0;
         padding: 10px 0;
     }
+
+  
+
 }
 
 .hero-header {
     background: url(../img/hero.jpg) top right no-repeat;
     background-size: cover;
+    
 }
 
 .service-item {
