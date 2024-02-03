@@ -70,6 +70,25 @@
     color: var(--primary);
 }
 
+
+.my-float {
+    padding-top: 16px;
+  }
+
+  .float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 80px;
+    right: 30px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
 @media (min-width: 992px) {
     .navbar-light .navbar-nav .nav-link::before {
         position: absolute;
@@ -100,10 +119,11 @@
 }
 
 .hero-header {
-    background: url(../img/hero.jpg) top right no-repeat;
-    background-size: cover;
-    
+    background: url(../img/fondoGB.jpg)  no-repeat;
+    background-size:cover;
+    background-color: white !important;
 }
+
 
 .service-item {
     position: relative;

@@ -5,11 +5,13 @@
     <meta charset="utf-8">
     <title>Generando Bienestar </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta name="description"
+    content="Generando Bienestar es un centro de salud integral que ofrece internación domiciliaria, droguería,farmacia y ortopedia.">
+  <meta name="keywords" content="generando bienestar, salud integral, internación domiciliaria, droguería, farmacia,salud,clinicas, hospitales">
+  <meta name="robots" content="index, follow">
 
     <!-- Favicon -->
-    <!-- <link href="img/logoNavbar.png"  rel="icon"> -->
+    <link href="img/LogoPestaña.png"  rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -97,15 +99,21 @@
         <div class="container py-5">
             <div class="row justify-content-start">
                 <div class="col-lg-8 text-center text-lg-start">
-                    <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5" style="border-color: rgba(256, 256, 256, .3) !important; color: black !important;">Bienvenido a Generando Bienestar</h5>
-                    <h1 class="display-1 mb-md-4" style="color: black;">Somos una organización al servicio de la salud</h1>
+                    <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5" style="border-color: rgba(256, 256, 256, .3) !important; color: white !important;">Bienvenido a Generando Bienestar</h5>
+                    <h1 class="display-1 mb-md-4" style="color: white;" >Somos una organización al servicio de la salud</h1>
                     <div class="pt-2">
-                        <a href="" class="btn btn-light rounded-pill py-md-3 px-md-5 mx-2">Conoce más</a>
+                        <a href="/contact.html" class="btn btn-primary rounded-pill py-md-3 px-md-5 mx-2">Conoce más</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <a href="https://api.whatsapp.com/send?phone=5492664631014&text=Hola%21%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus servicios%20."
+    class="float animate__animated animate__fadeIn" target="_blank">
+
+    <i class="bi bi-whatsapp my-float"></i>
+
+  </a>
     <!-- Hero End -->
 
 
@@ -172,7 +180,7 @@
 
                         </div>
                         <h4 class="mb-3">Droguería</h4>
-                        <p class="m-0">Contamos con la unión estratégica de la drogueria Mamsa, ubicada en la provincia de San Luis.</p>
+                        <p class="m-0">Contamos con la unión estratégica de la drogueria MAM S.A, ubicada en la provincia de San Luis.</p>
                         <a class="btn btn-lg btn-primary rounded-pill" href="./service.html">
                             <i class="bi bi-arrow-right"></i>
                         </a>
@@ -238,26 +246,26 @@
                 <div class="col-lg-6">
                     <div class="bg-white text-center rounded p-5">
                         <h1 class="mb-4">Contactarme</h1>
-                        <form>
+                        <form id="formTotal">
                             <div class="row g-3">
                                 
                                
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Nombre" style="height: 55px;">
+                                    <input type="text" id="inputName" class="form-control bg-light border-0" placeholder="Nombre" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Apellido" style="height: 55px;">
+                                    <input type="text" id="inputSurname" class="form-control bg-light border-0" placeholder="Apellido" style="height: 55px;">
                                 </div>
-
+    
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Email" style="height: 55px;">
+                                    <input type="email" id="inputEmail" class="form-control bg-light border-0" placeholder="Email" style="height: 55px;">
                                 </div>
                                 
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Consulta" style="height: 100px;">
+                                    <input type="text" id="inputMessage" class="form-control bg-light border-0" placeholder="Consulta" style="height: 100px;">
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Enviar consulta</button>
+                                    <button id="btnConfirm" class="btn btn-primary w-100 py-3" type="submit">Enviar consulta</button>
                                 </div>
                             </div>
                         </form>
@@ -289,6 +297,8 @@
                             <hr class="w-25 mx-auto">
                             <h3>Farmacia Cruz Verde</h3>
                             <h6 class="fw-normal text-primary mb-3">Chacabuco 447 (Villa Mercedes)</h6>
+                            <h6 class="fw-normal text-primary mb-3">2657-318737r</h6>
+
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
@@ -298,8 +308,24 @@
                             </div>
                           
                             <hr class="w-25 mx-auto">
-                            <h3>Drogueria Mamsa</h3>
+                            <h3>Drogueria MAM S.A</h3>
                             <h6 class="fw-normal text-primary mb-3">25 de Mayo 720 (San Luis)</h6>
+                            <h6 class="fw-normal text-primary mb-3">mamsagerencia@mamsa.ar</h6>
+
+                        </div>
+
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <!-- <img class="img-fluid mx-auto" style="width: 70%;" src="img/mamsa.png" alt=""> -->
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 100px; height: 2px;">
+                                </div>
+                            </div>
+                          
+                            <hr class="w-25 mx-auto">
+                            <h3>Ortopedia</h3>
+                            <h6 class="fw-normal text-primary mb-3">25 de mayo 720 (San Luis)</h6>
+                            <h6 class="fw-normal text-primary mb-3">2664-4631014</h6>
+
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
@@ -311,6 +337,8 @@
                             <hr class="w-25 mx-auto">
                             <h3>Farmacia Italia</h3>
                             <h6 class="fw-normal text-primary mb-3">Avenida Italia 1771 (San Luis)</h6>
+                            <h6 class="fw-normal text-primary mb-3">farmaciaitalia2@gmail.com / 2664-258822</h6>
+
                         </div>
                     </div>
                 </div>
@@ -337,9 +365,9 @@
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Links</h4>
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Inicio</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Nosotros</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Servicios</a>
-                        <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contacto</a>
+                        <a class="text-light mb-2" href="/about.html"><i class="fa fa-angle-right me-2"></i>Nosotros</a>
+                        <a class="text-light mb-2" href="/service.html"><i class="fa fa-angle-right me-2"></i>Servicios</a>
+                        <a class="text-light" href="/contact.html"><i class="fa fa-angle-right me-2"></i>Contacto</a>
                     </div>
                 </div>
 
@@ -350,7 +378,7 @@
                     <p class="mb-2 fw-bold">Farmacia Cruz Verde</p>
                     <p class="mb-2">Chacabuco 447 (Villa Mercedes)</p>
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Droguería</h4>
-                    <p class="mb-2 fw-bold">Drogueria Mamsa</p>
+                    <p class="mb-2 fw-bold">Drogueria MAM S.A</p>
                     <p class="mb-2">25 de Mayo 720 (San Luis)</p>
                 </div>
               

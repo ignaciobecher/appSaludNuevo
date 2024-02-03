@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MEDINOVA - Hospital Website Template</title>
+    <title>Generando Bienestar </title>
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/LogoPestaña.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -42,24 +43,7 @@
                         <a class="text-decoration-none text-body px-3" href=""><i class="bi bi-envelope me-2"></i>generandobienestaradm@gmail.com</a>
                     </div>
                 </div>
-                <!-- <div class="col-md-6 text-center text-lg-end">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-body px-2" href="">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="text-body px-2" href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="text-body px-2" href="">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a class="text-body px-2" href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="text-body ps-2" href="">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div> -->
+          
                 </div>
             </div>
         </div>
@@ -106,26 +90,26 @@
             <div class="col-lg-6">
                 <div class="bg-white text-center rounded p-5">
                     <h1 class="mb-4">Contactarme</h1>
-                    <form>
+                    <form id="formTotal">
                         <div class="row g-3">
                             
                            
                             <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control bg-light border-0" placeholder="Nombre" style="height: 55px;">
+                                <input type="text" id="inputName" class="form-control bg-light border-0" placeholder="Nombre" style="height: 55px;">
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control bg-light border-0" placeholder="Apellido" style="height: 55px;">
+                                <input type="text" id="inputSurname" class="form-control bg-light border-0" placeholder="Apellido" style="height: 55px;">
                             </div>
 
                             <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control bg-light border-0" placeholder="Email" style="height: 55px;">
+                                <input type="email" id="inputEmail" class="form-control bg-light border-0" placeholder="Email" style="height: 55px;">
                             </div>
                             
                             <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control bg-light border-0" placeholder="Consulta" style="height: 100px;">
+                                <input type="text" id="inputMessage" class="form-control bg-light border-0" placeholder="Consulta" style="height: 100px;">
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Enviar consulta</button>
+                                <button id="btnConfirm" class="btn btn-primary w-100 py-3" type="submit">Enviar consulta</button>
                             </div>
                         </div>
                     </form>
@@ -150,9 +134,9 @@
                 <div class="col-lg-3 col-md-6">
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Links</h4>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Inicio</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Nosotros</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Servicios</a>
+                        <a class="text-light mb-2" href="/index.html"><i class="fa fa-angle-right me-2"></i>Inicio</a>
+                        <a class="text-light mb-2" href="/about.html"><i class="fa fa-angle-right me-2"></i>Nosotros</a>
+                        <a class="text-light mb-2" href="/service.html"><i class="fa fa-angle-right me-2"></i>Servicios</a>
                         <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contacto</a>
                     </div>
                 </div>
@@ -204,9 +188,17 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/formSend.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("65U3gUdFV_lp5kx5e");
+   })();
+</script>
 </body>
 
 </html>
